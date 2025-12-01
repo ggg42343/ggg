@@ -38,9 +38,13 @@
 - **XL模型**：性能最差，但适合处理复杂、长文本生成任务。
 
 
+
+
 ## 3.完整代码示例及运行截图
 
 ### 3.1 初始化模型调用（基础问答）
+
+
 import requests
 
 OLLAMA_API_URL = "http://localhost:11434/api/generate"
@@ -63,9 +67,10 @@ return "请求失败: " + str(response.status_code)
 if __name__ == "__main__":
 user_input = input("请输入你的问题: ")
 answer = ask_question(user_input)
-print("回答: ", answer)
+print("回答: ", answer)  
 
-<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 10 30 40" src="https://github.com/user-attachments/assets/0b2554fc-f6d9-4475-9648-b73a482428a0" />
+<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 10 30 40" src="https://github.com/user-attachments/assets/69cb4dd4-536e-47a9-b796-03d8e1161af1" />
+
 
 
 ### 3.2 测试不同参数对输出的影响
@@ -102,7 +107,8 @@ test_parameters(user_input, param)
 效果说明：
 温度越低，输出越确定；温度越高，内容越丰富且带有随机性。
 
-<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 34 22 78" src="https://github.com/user-attachments/assets/f9a0b442-e4fd-4df9-9113-0a86bb00da22" />
+
+<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 34 22 78" src="https://github.com/user-attachments/assets/0f2b362d-bb8d-4ed9-a6a5-66a23cfac685" />
 
 
 ###3.3 流式输出（Streaming功能）
@@ -147,7 +153,8 @@ if __name__ == "__main__":
 user_input = input("请输入你的问题: ")
 stream_answer(user_input)
 
-<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 48 09 21" src="https://github.com/user-attachments/assets/345ad850-a7c4-400b-a75f-bbc45e52dc78" />
+
+<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 48 09 21" src="https://github.com/user-attachments/assets/e7ed5555-7dda-4b3c-af19-63882b4378df" />
 
 
 
@@ -190,7 +197,9 @@ parameters = [
 ]
 for param in parameters:
 measure_speed(user_input, param["temperature"], param["top_p"])
-<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 52 04 03" src="https://github.com/user-attachments/assets/5e641cdb-3190-43fc-8ddc-4ca2c16fc62e" />
+
+
+<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 52 04 03" src="https://github.com/user-attachments/assets/66c7a48d-2d5f-4480-8031-04da5be9692d" />
 
 
 
