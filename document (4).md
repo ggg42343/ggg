@@ -64,10 +64,8 @@ if __name__ == "__main__":
 user_input = input("请输入你的问题: ")
 answer = ask_question(user_input)
 print("回答: ", answer)
-![1]("C:\Users\20137\Videos\NVIDIA\Desktop\Desktop Screenshot 2025.12.02 - 03.10.30.40.png" "1")
 
-
-
+<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 10 30 40" src="https://github.com/user-attachments/assets/0b2554fc-f6d9-4475-9648-b73a482428a0" />
 
 
 ### 3.2 测试不同参数对输出的影响
@@ -103,7 +101,10 @@ test_parameters(user_input, param)
 
 效果说明：
 温度越低，输出越确定；温度越高，内容越丰富且带有随机性。
-![2]("C:\Users\20137\Videos\NVIDIA\Desktop\Desktop Screenshot 2025.12.02 - 03.34.22.78.png" "2")
+
+<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 34 22 78" src="https://github.com/user-attachments/assets/f9a0b442-e4fd-4df9-9113-0a86bb00da22" />
+
+
 ###3.3 流式输出（Streaming功能）
 import requests
 import json
@@ -146,7 +147,9 @@ if __name__ == "__main__":
 user_input = input("请输入你的问题: ")
 stream_answer(user_input)
 
-![3]("C:\Users\20137\Videos\NVIDIA\Desktop\Desktop Screenshot 2025.12.02 - 03.48.09.21.png" "3")
+<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 48 09 21" src="https://github.com/user-attachments/assets/345ad850-a7c4-400b-a75f-bbc45e52dc78" />
+
+
 
 ###3.4 推理速度测试（tokens/sec）
 import requests
@@ -187,7 +190,10 @@ parameters = [
 ]
 for param in parameters:
 measure_speed(user_input, param["temperature"], param["top_p"])
-![4]("C:\Users\20137\Videos\NVIDIA\Desktop\Desktop Screenshot 2025.12.02 - 03.52.04.03.png" "4")
+<img width="1920" height="1080" alt="Desktop Screenshot 2025 12 02 - 03 52 04 03" src="https://github.com/user-attachments/assets/5e641cdb-3190-43fc-8ddc-4ca2c16fc62e" />
+
+
+
 
 ## 4. 参数调优心得体会
 ### 4.1 关键参数影响
